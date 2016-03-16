@@ -20,6 +20,8 @@
         }
   </style>
 
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
 
 </head>
 
@@ -35,11 +37,24 @@
 
 <div align=center style="margin-top: 100px;">
     
-    <a href="Page02.html" title="Перейти"><img src="button_1.gif"></a>
+    <a href="Page02.html" id=button_1_href onclick="return false;" title="Перейти">
+        <img id=button_1_id src="button_1.gif">
+    </a>
 
 </div>
 
 
 </body>
+
+<script>
+
+document.getElementById('button_1_id').onclick = function(e) 
+{
+  var x = e.offsetX==undefined?e.layerX:e.offsetX;
+  var y = e.offsetY==undefined?e.layerY:e.offsetY;
+  Page01click(x,y);
+}
+
+</script>
 
 </html>

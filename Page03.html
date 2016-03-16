@@ -20,10 +20,12 @@
         }
   </style>
 
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
 
 </head>
 
-<body>
+<body onload="Page03init();">
 
 <h1 align=center style="margin-top: 20px;">Спасибо за участие в тестировании!</h1>
 
@@ -37,16 +39,29 @@
 
 <div align=center style="margin-top: 20px;">
     
-    <a href="Page01.html" title="Выход"><img src="button_3.gif"></a>
+    <a href="Page01.html" id=button_3_href onclick="return false;" title="Выход">
+        <img id=button_3_id src="button_3.gif">
+    </a>
 
 </div>
 
 <div align=center style="margin-top: 30px;">
-    <img align=center src="dts_01.jpg" width=640 height=512>
+    <img align=center id=gallery_image>
 </div>
 
 
 
 </body>
+
+<script>
+
+document.getElementById('button_3_id').onclick = function(e) 
+{
+  var x = e.offsetX==undefined?e.layerX:e.offsetX;
+  var y = e.offsetY==undefined?e.layerY:e.offsetY;
+  Page03click(x,y);
+}
+
+</script>
 
 </html>
