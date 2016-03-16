@@ -30,5 +30,5 @@ function Page02click(page_href)
     
     set_cookie("id",i);
     
-    location.href = page_href;
+    location.href = page_href+i;
 }
