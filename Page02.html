@@ -1,0 +1,51 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>USERS BEHAVIOURS</title>
+
+  <style>
+        p {
+        	font-size: 24px;
+        	width: 800px;
+        	margin: 0 auto;
+        	margin-top: 100px;
+        }
+  </style>
+
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+
+</head>
+
+<body onload="Page02init();">
+
+<p align=justify>
+
+Сайт пытается построить модель поведения пользователя. Для этого, чтобы набрать 
+статистику, введите в текстовое поле свой идетнификатор (произвольный логин или 
+мейл). 
+
+<p style="margin-top: 50px;">
+    
+Важно, чтобы при тестировании вводимый идентификатор не менялся – именно 
+это позволит набрать нужную статистику.
+
+<p style="margin-top: 50px;">
+    
+<b>Введите идентификатор:</b>
+
+<input id=user_id type=text maxlength=80 size=50>
+
+</p>
+
+<div align=center style="margin-top: 100px;">
+    
+    <a href="Page03.html" onclick="Page02click(this.href);return false;" title="Перейти"><img src="button_2.gif"></a>
+
+</div>
+
+
+
+</body>
+
+</html>
